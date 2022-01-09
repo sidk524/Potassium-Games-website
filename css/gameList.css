@@ -1,0 +1,242 @@
+#mainNavbar{
+	border-radius: 50px;
+	
+  background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(61,61,91,1) 44%, rgba(0,212,255,1) 100%);
+
+}		
+#navbarContainer{
+	height: 10%;
+	width: 98%;
+	margin-left:1%;
+	margin-top: 1%;
+	position:absolute;
+  z-index: 2;
+}
+
+body, html {
+  width:100%;
+  height:100%;
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+  overflow-x:hidden;
+  display:flex;
+}
+
+#slide1Content{
+  width:100vw;
+	height: 100%;
+	justify-content: center;
+}
+#listOfGames{
+	width:100%;
+	height:80%;
+	background-color:black;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#background{
+	width: 60vw;
+	height: 300vh;
+  background-color: #0063B2FF;
+	z-index: 5;
+  margin: auto;
+  transform: translateY(8vw);
+  text-align: center;
+}
+
+#gamesTitle{
+  font-size: 3vw;
+  font-family: "Alternate Gothic";
+  text-shadow: 3px 3px 3px #4a4b46;
+  /*border: 5px green solid;*/
+}
+.news-image{
+  width: 100%;
+  height: 90%; 
+
+}
+.news-date{
+  text-align: right;
+  transform: translateY(-100%);
+}
+.news-title{
+  font-size: 1vw;
+  text-align: center;
+  color: black;
+}
+
+.news-container{
+  
+  /*border: 1px red solid;*/
+  width: 100%;
+  height: 27%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -25vh;
+}
+
+.author{
+  text-align: left;
+}
+
+.news-tab-other{
+  margin: 5px 5px 5px 35px;
+  /*border: 1px blue solid;*/
+  padding: 5px 5px 5px 5px;
+  height: 20vh;
+  width: 11vw;
+  background: rgb(9,217,90);
+  background: linear-gradient(180deg, rgba(9,217,90,1) 0%, rgba(183,243,255,1) 100%);
+}
+
+.news-tab{
+  margin: 5px 5px 5px 5px;
+  /*border: 1px blue solid;*/
+  padding: 5px 5px 5px 5px;
+  height: 20vh;
+  width: 11vw;
+  background: rgb(9,217,90);
+  background: linear-gradient(180deg, rgba(9,217,90,1) 0%, rgba(183,243,255,1) 100%);
+}
+.mainInfoCatagory {
+  bottom: 25vh;
+  width: 37vw;
+  height: 23vh;
+  /*border: 1px purple solid;*/
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 1vw;
+}
+
+.oneBoxAbove{
+  justify-content: right;
+  width: 15vw;
+  height: 22vh;
+  /*border: 1px black solid;*/
+}
+
+.titleForCatagory{
+  width: 37%;
+  height: 20vh;
+  /*border: 1px solid orange;*/
+  margin-left: 1vw;
+  font-size: 3vw;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300%;
+  font-family: "Proxima,Helvetica Neue,Helvetica,Arial,sans-serif";
+  text-shadow: 3px 3px 3px #4a4b46;
+}
+
+.scrollableListOfGames{
+  width:20vw;
+  height:50vh;
+  /*border: 1px solid yellow;*/
+  margin-left: 1vw;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(184,45,253,1) 100%); 
+  overflow-y: scroll;
+}
+
+
+#searchResultContainer{
+  height: 30%;
+  width: 200px;
+  position: absolute;
+  transform: translateY(3vh);
+  z-index: 1;
+}
+
+.list-group-item{
+  display: none;
+  z-index: 1;
+}
+
+#main{
+  width: 100%;
+  height:95%;
+  /*transform: translateY(-2vw);*/
+  z-index:-4;
+  /*border: 1px solid blue;*/
+}
+
+@keyframes enlarge{
+  0%{transform: scale(1.0);}
+  1%{transform: scale(1.1);}
+  100%{transform: scale(1.1);}
+}
+.boxToEnlarge:hover{
+  animation: enlarge;
+  animation-duration: 100s;
+  box-shadow: 0 0 100px rgba(0,0,0,1);
+}
+
+.listOfGamesItem{
+  color: black;
+}
+#special {
+  font-size: 0.9vw;
+}
